@@ -191,16 +191,22 @@ void aes_encrypt()
 round_key is 1D array of size (11 (rounds) * 4 (word) * 4(bytes in word)) bytes
 round *16 gives the starting position of round key
 i*4 + j is just a sequential access as per the loop.
+(*state)[i][j] ^= round_key[round * 16 + i * 4 + j];
 */
 void add_roundKey(int round)
 {
 
 	
 }
-
+/*
+We need to use sbox[] constant which is defined in the starting of this program.
+Each byte in state is replaced by values from sbox.
+output = sbox[input]
+(*state)[i][j] = sbox[(*state)[i][j]]
+*/
 void sub_byte()
 {
-	
+//(*state)	
 }
 
 /*
