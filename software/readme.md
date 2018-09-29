@@ -1,1 +1,1 @@
-C code for AES is present here
+C code for AES prototype is given here.
