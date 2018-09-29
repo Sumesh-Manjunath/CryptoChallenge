@@ -71,11 +71,15 @@ void key_expansion(uint8_t*);
 uint8_t xtime(uint8_t);
 uint8_t Multiply(uint8_t, uint8_t);
 
+//week 2 homework
 void add_roundKey(int);
 
 void aes_encrypt(void);
+//week 2 homework
 void sub_byte(void);
+//week 2 homework
 void shift_row(void);
+
 void mix_column(void);
 
 void AES_ECB_encrypt(const uint8_t*, uint8_t*, uint8_t*, const uint32_t);
@@ -83,7 +87,9 @@ void AES_ECB_decrypt(const uint8_t*, uint8_t*, uint8_t*, const uint32_t);
 
 
 void aes_decrypt(void);
+//week 2 homework (optional)
 void inv_sub_byte(void);
+//week 2 homework (optional)
 void inv_shift_row(void);
 void inv_mix_column(void);
 
